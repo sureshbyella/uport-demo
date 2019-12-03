@@ -1,0 +1,9 @@
+import { Connect,SimpleSigner } from 'uport-connect'
+
+//export let uport = new Connect('TruffleBox')
+export let uport = new Connect('Login Testing Uport Decentralized Application', {
+      clientId: '2ojFsyjydrgn4erCqcQG3U9yiFYrcEKB2Pd',
+      network: 'rinkeby',
+      signer: SimpleSigner('c2e2b59760a0928823115666cf168ee38c5a731d6179cd2fda3c88e4cc50d4d3')
+    }) 
+export const web3 = uport.getWeb3()
